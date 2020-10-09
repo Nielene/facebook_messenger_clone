@@ -39,3 +39,44 @@ When you’re ready, deploy your web app
 Put your static files (e.g., HTML, CSS, JS) in your app’s deploy directory (the default is “public”). Then, run this command from your app’s root directory:
 
 **firebase deploy**
+
+
+-------------
+https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
+
+npx create-react-app firebase-hosting-demo
+firebase login
+firebase init
+    Select Hosting: Configure and deploy Firebase Hosting sites.
+    Select Use an existing project
+    Select your Firebase Project (e.g. jake-firebase-hosting-demo)
+        By default, Create React App will generate a build folder that will contain the production assets. Unless you changed the default configuration, you’ll want to enter build for this option.
+        You will also be asked whether or not Firebase should configure as a single-page app. You’ll want to enter y (Yes) for this option.
+        The last option is whether or not Firebase should overwrite your existing build/index.html. If you haven’t created a build for your app yet, then you won’t see this option. You’ll want to enter N (No) for this option, though.
+firebase deploy
+
+-----------
+
+material ui
+https://material-ui.com/
+npm install @material-ui/core
+
+
+____________
+
+
+ES7 React/Redux/GraphQL/React-Native snippets
+by: dsznajder
+v2.8.2
+
+i installed:
+
+react-native-snippets
+    Run the following terminal command:
+      apm install react-native-snippets
+      The package provides two snippets
+    The package provides two snippets
+      rnc - React Native Class Component Boilerplate
+      rnp - React Native Pure Component Boilerplate
+
+react-es7-snippets
