@@ -4,10 +4,7 @@ import './App.css';
 import Message from './Message.js'
 
 function App() {
-  const [input, setInput] = useState([
-    {username: 'sonny', text: 'hey guys'},
-    {username: 'qazi', text: 'whats up'}
-  ]);   // state hooks
+  const [input, setInput] = useState('');   // state hooks
   const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState('');
 
@@ -28,9 +25,7 @@ function App() {
   const sendMessage = (event) => {
     //all the logic to send a message goes here
     event.preventDefault();   // bc of button type='submit'
-    setMessages([
-      ...messages, {username: username, text: input}
-    ]);
+    setMessages([...messages, input]);
     setInput('');
   }
 
@@ -49,7 +44,7 @@ function App() {
 
       {
         messages.map(message => (
-          <Message username={message.username} text={message.text}/>
+          <Message text={message}/>
         ))
       }
 
