@@ -5,7 +5,10 @@ import Message from './Message.js'
 
 function App() {
   const [input, setInput] = useState('');   // state hooks
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {username: 'sonny', text: 'hey guys'},
+    {username: 'qazi', text: 'whats up'}
+  ]);
   const [username, setUsername] = useState('');
 
   console.log('input:', input, 'message:', messages, 'username:', username);
@@ -44,7 +47,7 @@ function App() {
 
       {
         messages.map(message => (
-          <Message text={message}/>
+          <Message username={message.username} text={message.text} />
         ))
       }
 
