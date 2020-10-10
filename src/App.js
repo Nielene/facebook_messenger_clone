@@ -17,16 +17,10 @@ function App() {
 
   useEffect(() => {
     // const username = prompt('Please enter your name');
-    // setUsername('')
     setUsername(prompt('Please enter your name'))
-    //run code here...
-    //if it is blank inside the dependencies, [], this code runs ONCE (default condition: when the page loads) when the app component loads
-    //if condition/dependency is [input], useEffect will run every time anything is typed: 'h', 'he', 'hel', 'hell', 'hello' - see console.log(input)
-    // leave it empty bc we only want to prompt the user once.
   }, [] ) // condition
 
   const sendMessage = (event) => {
-    //all the logic to send a message goes here
     event.preventDefault();   // bc of button type='submit'
     setMessages([
       ...messages, {username: username, text: input}

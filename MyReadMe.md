@@ -1,4 +1,8 @@
 https://www.youtube.com/watch?v=KB7JEnfc7Dc
+Profit with JS - description.
+
+
+
 firebase.
 
 #1
