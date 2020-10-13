@@ -4,11 +4,22 @@ import './Form.css';
 
 function Form (props) {
   return (
-    <form>
+    <form className='form'>
       <FormControl>
         <InputLabel>Enter a message</InputLabel>
-        <Input value={props.input} onChange={event => props.setInput(event.target.value)} />
-        <Button disabled={!props.input} variant='contained' color='primary' type='submit' onClick={props.sendMessage}>Send Message</Button>
+        <Input
+          value={props.input}
+          onChange={event => props.setInput(event.target.value)}
+        />
+        <Button
+          disabled={!props.input}
+          variant='contained'
+          color='primary'
+          type='submit'
+          onClick={props.sendMessage}
+        >
+          Send Message
+        </Button>
       </FormControl>
     </form>
   )

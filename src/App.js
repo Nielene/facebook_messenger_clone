@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
 import './App.css';
 import Message from './Message.js'
 import Form from './Form.js'
@@ -30,28 +29,27 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chatter Box</h1>
-      <h2>Hey {username}</h2>
 
-      {
-        messages.map(message => (
-          <Message username={username} message={message} /> // message: the entire object {user and text}
-        ))
-      }
+      <div className='heading'>
+        <h1>Chatter Box</h1>
+        <h2>Hey {username}</h2>
+      </div>
 
-      <Form input={input} setInput={setInput} sendMessage={sendMessage}/>
+      <div className='form__area'>
+        <Form input={input} setInput={setInput} sendMessage={sendMessage}/>
+      </div>
 
-
-      <form>
-        <FormControl>
-          <InputLabel>Enter a message</InputLabel>
-          <Input value={input} onChange={event => setInput(event.target.value)} />
-          <Button disabled={!input} variant='contained' color='primary' type='submit' onClick={sendMessage}>Send Message</Button>
-        </FormControl>
-      </form>
+      <div className='message__area'>
+        {
+          messages.map(message => (
+            <Message username={username} message={message} /> // message: the entire object {user and text}
+            ))
+          }
+      </div>
 
     </div>
   );
+
 }
 
 export default App;
