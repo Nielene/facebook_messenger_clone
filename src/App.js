@@ -2,23 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Button, FormControl, InputLabel, Input } from '@material-ui/core';
 import './App.css';
 import Message from './Message.js'
+import Form from './Form.js'
 
 function App() {
+
   const [input, setInput] = useState('');   // state hooks
+
   const [messages, setMessages] = useState([
-    {username: 'sonny', text: 'hey guys'},
-    {username: 'qazi', text: 'whats up'}
+    {username: 'Alia', text: 'How are you?'},
+    {username: 'Nelia', text: 'Alright. You?'}
   ]);
+
   const [username, setUsername] = useState('');
-
-  console.log('input:', input, 'message:', messages, 'username:', username);
-  // useState = variable in React. a type of hook.
-  // useEffect = run code on a condition in REACT. a type of hook.
-
   useEffect(() => {
     // const username = prompt('Please enter your name');
     setUsername(prompt('Please enter your name'))
-  }, [] ) // condition
+  }, [] )
 
   const sendMessage = (event) => {
     event.preventDefault();   // bc of button type='submit'
@@ -28,10 +27,20 @@ function App() {
     setInput('');
   }
 
+
   return (
     <div className="App">
-      <h1>Hellow Clever Programmers</h1>
-      <h2>Welcome {username}</h2>
+      <h1>Chatter Box</h1>
+      <h2>Hey {username}</h2>
+
+      {
+        messages.map(message => (
+          <Message username={username} message={message} /> // message: the entire object {user and text}
+        ))
+      }
+
+      <Form input={input} setInput={setInput} sendMessage={sendMessage}/>
+
 
       <form>
         <FormControl>
@@ -40,12 +49,6 @@ function App() {
           <Button disabled={!input} variant='contained' color='primary' type='submit' onClick={sendMessage}>Send Message</Button>
         </FormControl>
       </form>
-
-      {
-        messages.map(message => (
-          <Message username={username} message={message} /> // message: the entire object {user and text}
-        ))
-      }
 
     </div>
   );

@@ -5,8 +5,8 @@ import './Message.css';
 function Message({message, username}) {
   const isUser = username === message.username;
   return (
-    <div className={`message ${isUser && 'message__user'}`}>
-      <Card >
+    <div className={`message ${isUser && 'message__user'}`}>   {/* if true */}
+      <Card className={isUser ? 'message__userCard' : 'message__guestCard'}>   {/*if else - ternary*/}
         <CardContent>
           <Typography
           color='white'
