@@ -3,7 +3,10 @@
 ```js
 
 const [input, setInput] = useState('');   // state hooks
-
+const [messages, setMessages] = useState([   // make messages an object
+  {username: 'sonny', text: 'hey guys'},
+  {username: 'qazi', text: 'whats up'}
+]);
 // useState = variable in React. a type of hook.
 // useEffect = run code on a condition in REACT. a type of hook.
 
@@ -21,7 +24,26 @@ useEffect(() => {
 
 const sendMessage = (event) => {
   event.preventDefault();   // bc of button type='submit'
+
+  setMessages([
+    //   ...messages, input         input has to change to an object.
+    ...messages, {username: username, text: input}
+  ]); //
+  setInput('');
+
+  // messages is set as on object; even though input is being set as a string, it needs to be interpreted as an object, to match messages.
 }
+
+```
+
+=========================================
+#Message.js
+
+```js
+
+<Typography color='textSecondary'>
+  ({new Date(message.timestamp?.seconds * 1000).toUTCString()})
+</Typography>
 
 ```
 

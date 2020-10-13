@@ -84,3 +84,6 @@ react-native-snippets
       rnp - React Native Pure Component Boilerplate
 
 react-es7-snippets
+
+(***it didn't work***)
+________________
