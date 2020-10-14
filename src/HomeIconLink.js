@@ -1,45 +1,131 @@
+// import React from 'react';
+// import { MemoryRouter as Router } from 'react-router';
+//
+// import { Link as RouterLink } from 'react-router-dom'
+// import Link from '@material-ui/core/Link';
+// import { HomeIcon } from '@material-ui/icons/Home';
+//
+//
+// const MyLink = props => <RouterLink to="www.google.com" {...props} />
+// let editLink = <Link to="editTopic"/>;
+//
+//
+// export default function HomeIconLink() {
+//
+//   return (
+//     <Router>
+//       <Link component={MyLink} onTouchTap={editLink}>
+//         {<HomeIcon
+//           style={{
+//             fill: 'white',
+//             fontSize: 35,
+//             margin: 0
+//           }}
+//         />}
+//       </Link>
+//     </Router>
+//   )
+// }
 
 
 
-import React from 'react';
+
+
+
+
+// /* eslint-disable jsx-a11y/anchor-is-valid */
+// import React from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Link from '@material-ui/core/Link';
+// import Typography from '@material-ui/core/Typography';
+//
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     '& > * + *': {
+//       marginLeft: theme.spacing(2),
+//     },
+//   },
+// }));
+//
+// export default function HomeIconLink() {
+//   const classes = useStyles();
+//   const preventDefault = (event) => event.preventDefault();
+//
+//   return (
+//     <Typography className={classes.root}>
+//       <Link href="www.google.com" onClick={preventDefault} style={{color: 'white'}}>
+//         Link
+//       </Link>
+//       {/*
+//         // <Link href="www.google.com" onClick={preventDefault} color="inherit">
+//         //   {'color="inherit"'}
+//         // </Link>
+//         // <Link href="www.google.com" onClick={preventDefault} variant="body2">
+//         //   {'variant="body2"'}
+//         // </Link>
+//         */}
+//     </Typography>
+//   );
+// }
+
+
+
+
+
+
+
+//
+// import React from 'react';
 // import { MemoryRouter as Router } from 'react-router';
 // import { Link as RouterLink } from 'react-router-dom';
-import { Typography, Link } from '@material-ui/core';
-import HomeIcon from '@material-ui/icons/Home';
+// import { Typography, Link } from '@material-ui/core';
+// import { HomeIcon, FlatButton } from '@material-ui/icons/Home';
+//
+//
+// const preventDefault = (event) => {
+//   event.preventDefault()
+//   console.log("I'm linking to my website.")
+// };
+// // const consoleLog = () => {console.log("I'm linking to my website.")};
+//
+// export default function HomeIconLink (props) {
+//   return (
+//     <link href='nieleneethomas.web.app' rel='noopener noreferrer' />
+//
+//   )
+// }
 
 
-const preventDefault = (event) => {
-  event.preventDefault()
-  console.log("I'm linking to my website.")
-};
-// const consoleLog = () => {console.log("I'm linking to my website.")};
 
-export default function HomeIconLink (props) {
-  return (
 
-    <Typography>
-      <Link
-        // component={RouterLink}
-        // to='nieleneethomas.web.app'
-        href='https://nieleneethomas.web.app'
-        onClick={
-          preventDefault
-        }
-        target='_blank'
-        rel="noopener noreferrer"
-        // icon=
-      >
-        {<HomeIcon
-          style={{
-            fill: 'white',
-            fontSize: 35,
-            margin: 0
-          }}
-      />}
-      </Link>
-    </Typography>
-  )
-}
+
+// <Typography>
+//   <Link
+//     // component={RouterLink}
+//     // to='nieleneethomas.web.app'
+//     href='https://nieleneethomas.web.app'
+//     onClick={preventDefault}
+//     target='_blank'
+//     rel="noopener noreferrer"
+//     // icon=
+//   >
+//     {<HomeIcon
+  //       style={{
+    //         fill: 'white',
+    //         fontSize: 35,
+    //         margin: 0
+    //       }}
+    //   />}
+    //   <h1 style={{color: "white"}}>Nielene</h1>
+    //   </Link>
+    // </Typography>
+
+
+
+
+
+
+
 // export default function HomeIconLink (props) {
 //   return (
 //

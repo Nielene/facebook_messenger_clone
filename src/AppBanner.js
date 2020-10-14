@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
-import HomeIconLink from './HomeIconLink.js'
+// import HomeIconLink from './HomeIconLink.js'
 import './AppBanner.css';
 
 function AppBanner (props) {
@@ -15,12 +15,17 @@ function AppBanner (props) {
         <Toolbar
           variant="dense">
 
-          <HomeIconLink />
+          {/*
+            // <HomeIconLink />
+            */}
 
           <Typography
             variant="h3"
-            fontWeight="fontWeightBold"
             color="inherit"
+            style={{
+              fontWeight:"bold",
+              fontSize:'4.5vw'
+            }}
           >
             Chatter Box
           </Typography>
@@ -34,7 +39,10 @@ function AppBanner (props) {
             fontStyle="normal"
             fontFamily="Roboto, Helvetica, Arial, sans-serif"
             letterSpacing="0.02857em"
-            style={{ textTransform: 'uppercase'}}
+            style={{
+              textTransform: 'uppercase',
+              fontSize:'2.5vw'
+            }}
           >
             <i>WELCOME <strong>{props.username}</strong></i>
           </Typography>

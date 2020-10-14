@@ -3,13 +3,13 @@
   margin: 10px;
   width: fit-content;
   text-align: left;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .message__user {
   margin-left: auto;
   text-align: right !important;
-  max-width: 80%;
+  max-width: 70%;
 }
 
  .MuiCard-root,

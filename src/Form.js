@@ -5,11 +5,17 @@ import './Form.css';
 function Form (props) {
   return (
     <form className='form'>
-      <FormControl>
+      <FormControl
+        style={{
+          width: "33vw",
+          minWidth: '150px'
+        }}
+        >
         <InputLabel>Enter a message</InputLabel>
         <Input
           value={props.input}
           onChange={event => props.setInput(event.target.value)}
+          
         />
         <Button
           disabled={!props.input}
