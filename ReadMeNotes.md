@@ -1,3 +1,9 @@
+Hosting URL: https://facebook-messenger-clone-net.web.app
+
+---------------
+
+
+
 https://www.youtube.com/watch?v=KB7JEnfc7Dc
 Profit with JS - description.
 
@@ -187,3 +193,14 @@ Just add a style fill: "green"
 ```js
 <Star style={{fill: "green"}}/>
 ```
+
+-------------
+https://stackoverflow.com/questions/38510443/how-to-use-an-svg-file-in-a-svgicon-in-material-ui
+
+----------------
+https://material-ui.com/guides/composition/
+
+-----------------
+https://material-ui.com/guides/composition/#link
+
+-------------------
