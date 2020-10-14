@@ -16,7 +16,10 @@ function Message({message, username}) {
           <Typography
           color="textSecondary"
           gutterBottom
-          style={{ textTransform: 'capitalize'}}
+          style={{
+            textTransform: 'capitalize',
+            marginBottom: 0
+          }}
           >
           {isUser ? username : message.username}
           </Typography>
@@ -25,6 +28,9 @@ function Message({message, username}) {
           variant="h5"
           component="h2"
           color='textPrimary'
+          style={{
+            marginBottom: '5px'
+          }}
           >
           {message.text}
           </Typography>
