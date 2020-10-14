@@ -1,0 +1,26 @@
+.AppBar__body {
+
+}
+
+.MuiAppBar-colorPrimary {
+  /* background-color: #3f51b5; */
+}
+
+
+
+
+.MuiToolbar-gutters,
+.MuiToolbar-dense,
+.MuiToolbar-root {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
+
+}
+
+
+.welcome__text {
+  text-align: right;
+}

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import AppBanner from './AppBanner.js'
+// import HomeIconLink from './HomeIconLink.js'
+// import HomeIconLink from './HomeIconLink.js'
+
 import Message from './Message.js'
 import Form from './Form.js'
 
@@ -30,10 +34,10 @@ function App() {
   return (
     <div className="App">
 
-      <div className='heading'>
-        <h1>Chatter Box</h1>
-        <h2>Hey {username}</h2>
+      <div className='AppBanner__area'>
+        <AppBanner username={username}/>
       </div>
+
 
       <div className='form__area'>
         <Form input={input} setInput={setInput} sendMessage={sendMessage}/>

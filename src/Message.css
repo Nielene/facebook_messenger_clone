@@ -3,16 +3,32 @@
   margin: 10px;
   width: fit-content;
   text-align: left;
+  max-width: 80%;
 }
 
 .message__user {
   margin-left: auto;
-  color: white;
   text-align: right !important;
+  max-width: 80%;
+}
+
+ .MuiCard-root,
+ .message__userCard,
+ .MuiPaper-elevation1,
+ .MuiPaper-rounded,
+ .message_userCard
+{
+
+}
+
+div.MuiCardContent-root:last-child {
+  padding: 16px 16px 0 16px;
 }
 
 .message__userCard {
-  background-color: #0b81ff !important;
+  /* background-color: #00C6FF !important; */
+  background-color: #919cd9 !important;
+  color: white;
 }
 
 .message__guestCard {

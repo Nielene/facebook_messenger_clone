@@ -87,3 +87,103 @@ react-es7-snippets
 
 (***it didn't work***)
 ________________
+
+Typography:
+https://material-ui.com/components/cards/
+
+
+----------------
+https://www.npmjs.com/package/react-datetime
+npm install --save react-datetime
+
+----------------
+https://momentjs.com/
+npm install moment --save
+
+
+----------------
+https://material-ui.com/system/typography/
+Typography, inline text utilities
+
+----------------
+https://material-ui.com/components/app-bar/#fixed-placement
+
+----------------
+https://stackoverflow.com/questions/35813156/how-to-set-text-text-to-upper-case-in-react-native
+```js
+121 votes
+
+<View>
+  <Text style={{ textTransform: 'uppercase'}}>
+    This text should be uppercased.
+  </Text>
+
+  <Text style={{ textTransform: 'capitalize'}}>
+    Mixed:{' '}
+
+    <Text style={{ textTransform: 'lowercase'}}>
+      lowercase{' '}
+    </Text>
+
+  </Text>
+</View>
+```
+
+
+
+```js
+113 votes
+<Text style={{}}> {'Test'.toUpperCase()} </Text>
+```
+
+
+
+
+
+```js
+(3 votes)
+
+<Text>{props.complexity.toUpperCase()}</Text>
+
+<Text>{props.affordability.toUpperCase()}</Text>
+```
+
+
+----------------
+https://brandpalettes.com/facebook-messenger-color-codes/
+
+BLUE
+PANTONE: PMS 2726 C (NEAREST MATCH)
+HEX COLOR: #0078FF;
+RGB: (0,120,255)
+CMYK: (78,54,0,0)
+
+LIGHT BLUE
+PANTONE: PMS 298 C (NEAREST MATCH)
+HEX COLOR: #00C6FF;
+RGB: (0,198,255)
+CMYK: (63,1,0,0)
+
+WHITE
+
+
+--------------
+
+https://material-ui.com/components/cards/#complex-interaction
+
+-------------
+HomeIcon:
+https://material-ui.com/components/icons/#svgicon
+
+---------------
+
+https://www.colorhexa.com/3f51b5
+
+---------------
+https://stackoverflow.com/questions/50867449/is-there-a-way-i-can-overwrite-the-colour-the-material-ui-icons-npm-package-prov
+
+Just add a style fill: "green"
+
+```js
+<Star style={{fill: "green"}}/>
+```
