@@ -6,6 +6,8 @@
 
   /* background-image: url('https://cdn.pocket-lint.com/r/s/750x/assets/images/138382-apps-feature-facebook-messenger-23-tips-and-tricks-you-ve-likely-never-tried-image1-unjpywwzfs-png.webp?v1'); */
   background-image: url('./images/facebook-messenger-dark-background.webp');
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .AppBanner__area {

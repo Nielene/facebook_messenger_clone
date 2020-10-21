@@ -32,7 +32,7 @@ function Message({message, username}) {
             marginBottom: '5px'
           }}
           >
-          {message.text}
+          {message.message}
           </Typography>
 
           <Typography

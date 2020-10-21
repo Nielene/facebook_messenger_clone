@@ -204,3 +204,78 @@ https://material-ui.com/guides/composition/
 https://material-ui.com/guides/composition/#link
 
 -------------------
+NOTE:
+```js
+.message__user is using a convention known as BEM.
+
+theComponent__theElement
+```
+-------------------
+https://www.youtube.com/watch?v=KB7JEnfc7Dc
+1:19:xx into the video.
+
+
+create DATABASE in firebase:
+3 dots --> Database --> create database --> start in test mode -->
+
+see this:
+```js
+(didnt copy it)
+```
+
+--> next(enable) -->
+
+
+see this:
+```
+Realtime Database:
+**USE 'CLOUD FIRESTORE' INSTEAD!!!!!**
+
+Cloud Firestore location:
+nam5(us-central)
+
+--> Enable
+
+-->
+Data tab:
+
+https://facebook-messenger-clone-net.firebaseio.com/
+facebook-messenger-clone-net:
+```
+
+--> (that's it. no more. done.) --> now go back to react project.
+
+AIM:
+1. hosting online
+2. getting a databse (to never lose conversations).
+
+--> (go back to Data tab.) --> start collection -->
+
+```js
+1. give collectin id:
+collection id: messages
+
+```
+
+1. make firebase.js file in src.
+2. npm install firebase
+
+3. in console.firebase.google.com/u/1 :
+--> settings --> Project settings --> Firebase SDK snippet --> Config radio toggle --> copy the inner contents of the object:
+
+```js
+const firebaseConfig = {
+  apiKey: "AIzaSyDiXKk9k2jkXnMfSdj8OrYhy9U2v5FLdNA",
+  authDomain: "facebook-messenger-clone-net.firebaseapp.com",
+  databaseURL: "https://facebook-messenger-clone-net.firebaseio.com",
+  projectId: "facebook-messenger-clone-net",
+  storageBucket: "facebook-messenger-clone-net.appspot.com",
+  messagingSenderId: "691952668546",
+  appId: "1:691952668546:web:0b7f104d11bb49b93c099b",
+  measurementId: "G-WHNX6DC46R"
+};
+```
+
+4. now go to App.js
+
+5. create another useEffect.
